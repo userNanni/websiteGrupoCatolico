@@ -28,11 +28,8 @@ body {
   display: flex;
   padding: 0;
 
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-
-  min-height: 100svh;
 
   font-family: "Grenze Gotisch", serif;
   color: var(--font-color);
@@ -73,9 +70,8 @@ header {
 }
 
 section {
-  top: 0;
-  position: absolute;
-  
+  margin-top: clamp(5rem, 10vh, 9rem);
+  margin-bottom: clamp(2rem, 3vh, 3rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,12 +153,12 @@ footer {
   flex-direction: column;
   align-items: center;
 
-  position: absolute;
   bottom: 0;
 
   text-align: center;
 
   .footer {
+    position: relative;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     display: flex;
