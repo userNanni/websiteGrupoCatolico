@@ -98,6 +98,8 @@ section {
     border-radius: 1rem;
     background-color: var(--font-color);
     color: var(--base-color);
+    cursor: pointer;
+
     .title {
       padding: 0;
       margin-bottom: 0.5rem;
