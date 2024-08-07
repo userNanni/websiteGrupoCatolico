@@ -3,6 +3,7 @@
   --font-color: #e5e5e5;
   --contrast-color: #f75438e5;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -13,7 +14,7 @@
 }
 ::-webkit-scrollbar-thumb {
   background-color: #d6dee1;
-  border-radius: 20px;
+  border-radius: 1.5rem;
   border: 6px solid transparent;
   background-clip: content-box;
 }
@@ -23,17 +24,18 @@
 
 body {
   background-color: var(--base-color);
-  color: var(--font-color);
+
   display: flex;
   padding: 0;
-  top: 0;
-  left: 0;
+
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family: "Grenze Gotisch", serif;
-  overflow-x: hidden;
+
   min-height: 100svh;
+
+  font-family: "Grenze Gotisch", serif;
+  color: var(--font-color);
 }
 
 header {
@@ -52,8 +54,9 @@ header {
   justify-content: space-between;
   width: clamp(20rem, 50vw, 40rem);
   top: 0;
-  font-size: clamp(1.5rem, 5vw, 2rem);
   position: fixed;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+
   height: clamp(3rem, 7vh, 6rem);
 
   .active {
@@ -70,8 +73,9 @@ header {
 }
 
 section {
-  top: clamp(6rem, 10vh, 9rem);
-  position: relative;
+  top: 0;
+  position: absolute;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,19 +144,23 @@ section {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
+  height: fit-content;
+
   width: 100%;
-  position: relative;
-  bottom: 0;
-  text-align: center;
+
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10.4px);
   -webkit-backdrop-filter: blur(10.4px);
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  width: 100%;
+
+  display: flex;
+  flex-direction: column;
   align-items: center;
+
+  position: absolute;
+  bottom: 0;
+
+  text-align: center;
 
   .footer {
     margin-top: 2rem;
