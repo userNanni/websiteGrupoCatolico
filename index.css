@@ -142,7 +142,7 @@ section {
 footer {
   height: fit-content;
 
-  width: 100%;
+  width: 100vw;
 
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
